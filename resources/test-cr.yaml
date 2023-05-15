@@ -1,0 +1,12 @@
+apiVersion: "asp-cicd.automation.cloud.ibm.com/v1alpha1"
+kind: TestResource
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+  name: green
+spec:
+  propertyA: test-property-a
+  propertyB: test-property-b
+  propertyC: test-property-c
+status:  
+  color: green
